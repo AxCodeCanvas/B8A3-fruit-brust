@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Burst</title>
+
+    <!-- Tailwind and Daisy-UI link-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font - lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/567454b46a.js" crossorigin="anonymous"></script>
+
+    <!-- Font Style -->
+    <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+</head>
+
+
+
+
+
+
+
+<body class="font-lato">
+    <header class="container mx-auto px-8 md:px-12 lg:px-20">
+        <!------------ nav section start --------------->
+
+        <div class=" my-20 relative ">
+
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+
+                    <!-- banner image 1 -->
+                    <img src="./images/banner1.png" class="w-full card" />
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+
+                    <!-- banner image 3 -->
+                    <img src="./images/banner2.png" class="w-full" />
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+
+                    <!-- banner image 3 -->
+                    <img src="./images/banner3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+
+                    <!-- banner image 4 -->
+                    <img src="./images/banner4.png" class="w-full" />
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+
+            <h1
+                class="absolute text-center text-[#FFF] font-semibold md:font-bold lg:font-extrabold text-xl md:text-5xl lg:text-7xl bottom-20 md:bottom-40 lg:bottom-72  left-24 md:left-28 lg:left-60">
+                Exotic tastes at your
+                <br>
+                doorstep
+            </h1>
+            <p
+                class="absolute text-center text-[#FFF] font-normal  md:font-medium lg:font-medium text-xs md:text-base lg:text-base bottom-14 md:bottom-32 lg:bottom-60  left-20 md:left-44 lg:left-[440px]">
+                We supply highly quality organic products</p>
+
+            <button class="text-white py-1 md:py-3 lg:py-3 px-5 rounded-xl bg-[#F85559]
+            absolute bottom-3 md:bottom-16 lg:bottom-44  left-32 md:left-64 lg:left-[540px]
+            ">
+                Shop Now
+            </button>
+
+        </div>
+
+        <!-- -------------------------------------- -->
+        <div class="relative flex justify-center ">
+            <div class=" absolute bottom-10  flex w-fit gap-12 pl-10 pr-10 rounded bg-white">
+
+                <!-- 1 -->
+                <div class=" flex flex-col items-center">
+                    <div class="">
+                        <img src="./images/fruit1.png">
+                    </div>
+                    <div class="">
+                        <p>Strawberry</p>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class=" flex flex-col items-center">
+                    <div class="">
+                        <img src="./images/fruit2.png">
+                    </div>
+                    <div class="">
+                        <p>Orange</p>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class=" flex flex-col items-center">
+                    <div class="">
+                        <img src="./images/fruit3.png">
+                    </div>
+                    <div class="">
+                        <p>Mango</p>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class=" flex flex-col items-center">
+                    <div class="">
+                        <img src="./images/fruit4.png">
+                    </div>
+                    <div class="">
+                        <p>Strawberry</p>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class=" flex flex-col items-center">
+                    <div class="">
+                        <img src="./images/fruit5.png">
+                    </div>
+                    <div class="">
+                        <p>Pomegranate</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+    </header>
+
+    <!--------------------- main section start ---------------------->
+    <main class="container mx-auto px-5 md:px-12 lg:px-20">
+
+        <!-- Deal of the day section -->
+        <section class="mt-56">
+            <!-- Deal of the day text -->
+            <div class="flex flex-col md:flex-col lg:flex-row items-center justify-between">
+                <div class="text-center lg:items-start ">
+                    <h3 class="font-extrabold text-3xl md:text-4xl lg:text-5xl mb-3 md:mb-5 lg:mb-7 ">Deal of the day
+                    </h3>
+                    <p class="w-[290px] md:w-[390px] lg:w-[455px]">
+                        Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+                        Latin literature from 45 BC, making it over 2000 years old.
+                    </p>
+                </div>
+                <!-- date time container -->
+                <div class=" grid grid-cols-7 gap-5 mx-5 my-5 md:my-2 lg:my-0 md:gap-3 lg:gap-1 justify-center">
+                    <!-- ------- -->
+                    <div class="flex items-center justify-center">
+                        <div class="">
+                            <h4 class="font-extrabold text-5xl">29</h4>
+                            <p class="mt-2">Days</p>
+                        </div>
+                    </div>
+                    <!-- ----------- -->
+                    <div class="ml-0 md:ml-6 lg:ml-6 mt-2 "><img src="./images/Frame.png"></div>
+                    <!-- ----------- -->
+                    <div class="flex items-center justify-center">
+                        <div class=" ">
+                            <h4 class="font-extrabold text-5xl">15</h4>
+                            <p class="mt-2">Hours</p>
+                        </div>
+                    </div>
+                    <!-- ----------- -->
+                    <div class="ml-0 md:ml-6 lg:ml-6 mt-2"><img src="./images/Frame.png"></div>
+                    <!-- ----------- -->
+                    <div class="flex items-center justify-center">
+                        <div class="">
+                            <h4 class="font-extrabold text-5xl">25</h4>
+                            <p class="mt-2">Minutes</p>
+                        </div>
+                    </div>
+                    <!-- ----------- -->
+                    <div class="ml-0 md:ml-6 lg:ml-6 mt-2"><img src="./images/Frame.png"></div>
+                    <!-- ----------- -->
+                    <div class="flex items-center justify-center">
+                        <div class="">
+                            <h4 class="font-extrabold text-5xl">08</h4>
+                            <p class="mt-2">Seconds</p>
+                        </div>
+                    </div>
+                    <!-- ----------- -->
+                </div>
+            </div>
+        </section>
+
+        <!-- card section -->
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-5 ">
+            <!-- 1 -->
+            <div class="relative  pt-10 items-center w-full px-12 md:px-12 lg:py-12 lg:px-2 max-w-7xl">
+                <div class="grid grid-cols-1">
+                    <div
+                        class="w-full max-w-lg mx-auto my-4 bg-white shadow-xl border-solid border-2 border-gray-100 rounded-xl">
+                        <img class="flex-shrink-0 object-cover object-center w-28 md:w-20 pt-12 mx-auto -mt-8 rounded-full shadow-xl aboslute"
+                            src="./images/fruit6.png">
+
+                        <div class="p-6 text-center">
+                            <h4 class="mt-8 text-2xl font-bold leading-none tracking-tighter">
+                                12.90$ - 18.85$
+                            </h4>
+                            <hr class="mt-10 w-[244px] h-[1px]  mx-auto">
+                            <p class="my-6 inline-block leading-relaxed text-gray-500">
+                                Orange
+                            </p>
+                            <div class="">
+
+                                <span class="fa fa-star text-[#F85559]"></span>
+                                <span class="fa fa-star text-[#F85559]"></span>
+                                <span class="fa fa-star text-[#FBC0A8]"></span>
+                                <span class="fa fa-star text-[#FBC0A8]"></span>
+                                <span class="fa fa-star text-[#FBC0A8]"></span>
+                            </div>
+                            <div class="mt-6">
+                                <a href="#" class="flex text-[#F85559] font-bold text-lg items-center justify-center">
+                                    Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="relative  pt-10 items-center w-full px-12 md:px-12 lg:py-12 lg:px-2 max-w-7xl">
+                <div class="grid grid-cols-1">
+                    <div
+                        class="w-full max-w-lg mx-auto my-4 bg-white shadow-xl border-solid border-2 border-gray-100 rounded-xl">
+                        <img class="flex-shrink-0 object-cover object-center w-28 pt-12 mx-auto -mt-8 rounded-full shadow-xl aboslute"
+                            src="./images/fruit7.png">
+
+                        <div class="p-6 text-center">
+                            <h4 class="mt-8 text-2xl font-bold leading-none tracking-tighter">
+                                12.90$ - 18.85$
+                            </h4>
+                            <hr class="mt-10 w-[244px] h-[1px]  mx-auto">
+                            <p class="my-6 inline-block leading-relaxed text-gray-500">
+                                Orange
+                            </p>
+                            <div class="">
+
+                                <span class="fa fa-star text-[#F85559]"></span>
+                                <span class="fa fa-star text-[#F85559]"></span>
+                                <span class="fa fa-star text-[#FBC0A8]"></span>
+                                <span class="fa fa-star text-[#FBC0A8]"></span>
+                                <span class="fa fa-star text-[#FBC0A8]"></span>
+                            </div>
+                            <div class="mt-6">
+                                <a href="#" class="flex text-[#F85559] font-bold text-lg items-center justify-center">
+                                    Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="relative  pt-10 items-center w-full px-12 md:px-12 lg:py-12 lg:px-2 max-w-7xl">
+                <div class="grid grid-cols-1">
+                    <div
+                        class="w-full max-w-lg mx-auto my-4 bg-white shadow-xl border-solid border-2 border-gray-100 rounded-xl">
+                        <img class="flex-shrink-0 object-cover object-center w-28 pt-12 mx-auto -mt-8 rounded-full shadow-xl aboslute"
+                            src="./images/fruit8.png">
+
+                        <div class="p-6 text-center">
+                            <h4 class="mt-8 text-2xl font-bold leading-none tracking-tighter">
+                                12.90$ - 18.85$
+                            </h4>
+                            <hr class="mt-10 w-[244px] h-[1px]  mx-auto">
+                            <p class="my-6 inline-block leading-relaxed text-gray-500">
+                                Orange
+                            </p>
+                            <div class="">
+
+                                <span class="fa fa-star text-[#F85559]"></span>
+                                <span class="fa fa-star text-[#F85559]"></span>
+                                <span class="fa fa-star text-[#FBC0A8]"></span>
+                                <span class="fa fa-star text-[#FBC0A8]"></span>
+                                <span class="fa fa-star text-[#FBC0A8]"></span>
+                            </div>
+                            <div class="mt-6">
+                                <a href="#" class="flex text-[#F85559] font-bold text-lg items-center justify-center">
+                                    Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="relative  pt-10 items-center w-full px-12 md:px-12 lg:py-12 lg:px-2 max-w-7xl">
+                <div class="grid grid-cols-1">
+                    <div
+                        class="w-full max-w-lg mx-auto my-4 bg-white shadow-xl border-solid border-2 border-gray-100 rounded-xl">
+                        <img class="flex-shrink-0 object-cover object-center w-28 pt-12 mx-auto -mt-8 rounded-full shadow-xl aboslute"
+                            src="./images/fruit9.png">
+
+                        <div class="p-6 text-center">
+                            <h4 class="mt-8 text-2xl font-bold leading-none tracking-tighter">
+                                12.90$ - 18.85$
+                            </h4>
+                            <hr class="mt-10 w-[244px] h-[1px]  mx-auto">
+                            <p class="my-6 inline-block leading-relaxed text-gray-500">
+                                Orange
+                            </p>
+                            <div class="">
+
+                                <span class="fa fa-star text-[#F85559]"></span>
+                                <span class="fa fa-star text-[#F85559]"></span>
+                                <span class="fa fa-star text-[#FBC0A8]"></span>
+                                <span class="fa fa-star text-[#FBC0A8]"></span>
+                                <span class="fa fa-star text-[#FBC0A8]"></span>
+                            </div>
+                            <div class="mt-6">
+                                <a href="#" class="flex text-[#F85559] font-bold text-lg items-center justify-center">
+                                    Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!----------- Meet the team section ------------>
+        <section>
+            <div class="">
+                <div class="hero rounded-lg" style="background-image: url(./images/team.png );">
+                    <div class="hero-overlay rounded-lg bg-opacity-60"></div>
+                    <div class="hero-content text-center text-neutral-content flex flex-col">
+                        <div class="max-w-xl items-center">
+                            <h1 class="mb-5 mt-6 text-xl md:text-3xl lg:text-5xl font-extrabold">Meet the team section
+                            </h1>
+                            <p class="mb-5">
+                                Contrary to popular belief, is not simply random text. It has roots in a piece of
+                                classical Latin literature from 45 BC, making it over 2000 years old.
+                            </p>
+                        </div>
+                        <!-- member container start -->
+                        <div
+                            class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4  justify-between justify-center">
+                            <!-- member 1 -->
+                            <div class="flex justify-center">
+                                <div class="">
+                                    <div class="flex justify-center">
+                                        <img class="" src="./images/member1.png">
+                                    </div>
+                                    <h4 class="font-bold text-2xl">Awlad Hossain</h4>
+                                    <p class="font-medium mt-2 mb-4">Fruits Expert</p>
+                                    <span class="flex justify-center gap-3">
+                                        <img src="./images/icon/facebook.png">
+                                        <img src="./images/icon/twitter.png">
+                                        <img src="./images/icon/linkedin.png">
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- member 2 -->
+                            <div class="flex justify-center">
+                                <div class="">
+                                    <div class="flex justify-center">
+                                        <img class="" src="./images/member2.png">
+                                    </div>
+                                    <h4 class="font-bold text-2xl">Safia Chowdhury
+                                    </h4>
+                                    <p class="font-medium mt-2 mb-4">Fruits Expert</p>
+                                    <span class="flex justify-center gap-3">
+                                        <img src="./images/icon/facebook.png">
+                                        <img src="./images/icon/twitter.png">
+                                        <img src="./images/icon/linkedin.png">
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- member 3 -->
+                            <div class="flex justify-center">
+                                <div class="">
+                                    <div class="flex justify-center">
+                                        <img class="" src="./images/member3.png">
+                                    </div>
+                                    <h4 class="font-bold text-2xl">Rokib Hossain</h4>
+                                    <p class="font-medium mt-2 mb-4">Fruits Expert</p>
+                                    <span class="flex justify-center gap-3">
+                                        <img src="./images/icon/facebook.png">
+                                        <img src="./images/icon/twitter.png">
+                                        <img src="./images/icon/linkedin.png">
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- member 4 -->
+                            <div class="flex justify-center">
+                                <div class="">
+                                    <div class="flex justify-center">
+                                        <img class="" src="./images/member4.png">
+                                    </div>
+                                    <h4 class="font-bold text-2xl">Chaity</h4>
+                                    <p class="font-medium mt-2 mb-4">Fruits Expert</p>
+                                    <span class="flex justify-center gap-3">
+                                        <img src="./images/icon/facebook.png">
+                                        <img src="./images/icon/twitter.png">
+                                        <img src="./images/icon/linkedin.png">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!----- member container end ----->
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-------- Why Choose Us section ---------->
+        <section>
+            <div class="">
+                <!-- Why Choose Us text container-->
+                <div class="flex justify-center">
+                    <div class="mt-36 mb-12 text-center max-w-xl">
+                        <h4 class="font-extrabold text-5xl">Why Choose Us</h4>
+                        <p class="font-medium mt-6">
+                            Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+                            Latin literature from 45 BC, making it over 2000 years old.
+                        </p>
+                    </div>
+                </div>
+                <!-- grid section -->
+                <div class="grid lg:grid-cols-3 my-10">
+                    <!-- dedicated team container -->
+                    <div class="">
+                        <!--left text 1 -->
+                        <div
+                            class="flex flex-col md:flex-row lg:flex-row my-5 items-center lg:items-start md:items-start">
+                            <!-- dedicated team logos container -->
+                            <div class="flex justify-center bg-[#1212121A] rounded-full h-11 w-16 items-center ">
+                                <img class="m-6" src="./images/icon/dedicated_icon.png">
+                            </div>
+                            <!-- dedicated team text container -->
+                            <div
+                                class=" mr-3 flex flex-col items-center md:items-start md:text-left lg:items-start lg:text-left">
+                                <h4 class="font-extrabold text-2x ">Dedicated Team</h4>
+                                <hr class="w-24 border-[#121212] border-1 my-4">
+                                <p class="font-medium text-center md:text-end lg:text-end">
+                                    Professional employees are there for you to pick the most amazing fruits.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- left text 2 -->
+                        <div
+                            class="flex flex-col md:flex-row lg:flex-row my-5 items-center lg:items-start md:items-start">
+                            <!-- dedicated team logos container -->
+                            <div class="flex justify-center bg-[#1212121A] rounded-full h-11 w-16 items-center ">
+                                <img class="m-6" src="./images/icon/fresh_icon.png">
+                            </div>
+                            <!-- dedicated team text container -->
+                            <div
+                                class=" mr-3 flex flex-col items-center md:items-start md:text-left lg:items-start lg:text-left">
+                                <h4 class="font-extrabold text-2x ">Fresh is Best</h4>
+                                <hr class="w-24 border-[#121212] border-1 my-4">
+                                <p class="font-medium text-center md:text-end lg:text-end">
+                                    Professional employees are there for you to pick the most amazing fruits.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- left text 3 -->
+                        <div
+                            class="flex flex-col md:flex-row lg:flex-row my-5 items-center lg:items-start md:items-start">
+                            <!-- dedicated team logos container -->
+                            <div class="flex justify-center bg-[#1212121A] rounded-full h-11 w-16 items-center ">
+                                <img class="m-6" src="./images/icon/gift_icon.png">
+                            </div>
+                            <!-- dedicated team text container -->
+                            <div
+                                class=" mr-3 flex flex-col items-center md:items-start md:text-left lg:items-start lg:text-left ">
+                                <h4 class="font-extrabold text-2x ">Gift Certificates</h4>
+                                <hr class="w-24 border-[#121212] border-1 my-4">
+                                <p class="font-medium text-center md:text-end lg:text-end">
+                                    Professional employees are there for you to pick the most amazing and fresh fruits.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!------ dedicated team img container ------>
+                    <div class="mx-6 md:mx-auto lg:mx-6 my-5 lg:my-1  ">
+                        <img class="w-auto h-[414px]" src="./images/whychoose1.png">
+                    </div>
+                    <!-- integrated text container -->
+                    <div class="">
+                        <!-- right text 1 -->
+                        <div
+                            class="flex flex-col-reverse md:flex-row lg:flex-row my-5 items-center lg:items-start md:items-start">
+                            <!-- dedicated team text container -->
+                            <div
+                                class=" mr-3 flex flex-col items-center md:items-end md:text-right lg:items-end lg:text-right">
+                                <h4 class="font-extrabold text-2x ">Dedicated Team</h4>
+                                <hr class="w-24 border-[#121212] border-1 my-4">
+                                <p class="font-medium text-center md:text-end lg:text-end">
+                                    Professional employees are there for you to pick the most amazing fruits.
+                                </p>
+                            </div>
+                            <!-- dedicated team logos container -->
+                            <div class="flex justify-center bg-[#1212121A] rounded-full h-11 w-16 items-center ">
+                                <img class="m-6" src="./images/icon/integrated.png">
+                            </div>
+                        </div>
+
+                        <!-- right text 2 -->
+                        <div
+                            class="flex flex-col-reverse md:flex-row lg:flex-row my-5 items-center lg:items-start md:items-start">
+                            <!-- dedicated team text container -->
+                            <div
+                                class=" mr-3 flex flex-col items-center md:items-end md:text-right lg:items-end lg:text-right">
+                                <h4 class="font-extrabold text-2x ">Dedicated Team</h4>
+                                <hr class="w-24 border-[#121212] border-1 my-4">
+                                <p class="font-medium text-center md:text-end lg:text-end">
+                                    Professional employees are there for you to pick the most amazing fruits.
+                                </p>
+                            </div>
+                            <!-- dedicated team logos container -->
+                            <div class="flex justify-center bg-[#1212121A] rounded-full h-11 w-16 items-center ">
+                                <img class="m-6" src="./images/icon/sustainable .png">
+                            </div>
+                        </div>
+
+                        <!-- right text 3 -->
+                        <div
+                            class="flex flex-col-reverse md:flex-row lg:flex-row my-5 items-center lg:items-start md:items-start">
+                            <!-- dedicated team text container -->
+                            <div
+                                class=" mr-3 flex flex-col items-center md:items-end md:text-right lg:items-end lg:text-right ">
+                                <h4 class="font-extrabold text-2x ">Dedicated Team</h4>
+                                <hr class="w-24 border-[#121212] border-1 my-4">
+                                <p class="font-medium text-center md:text-end lg:text-end">
+                                    Professional employees are there for you to pick the most amazing fruits.
+                                </p>
+                            </div>
+                            <!-- dedicated team logos container -->
+                            <div class="flex justify-center bg-[#1212121A] rounded-full h-11 w-16 items-center ">
+                                <img class="m-6" src="./images/icon/benefits.png">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <!--------------------- main section start ---------------------->
+
+
+    <!--------------------- footer section start ---------------------->
+    <footer class="footer footer-center mt-36 py-36 bg-[#121212] text-base-content">
+
+        <div class="flex justify-center items-center gap-4">
+            <img src="./images/logo.png">
+            <h3 class="font-bold text-4xl text-white">Fruit Burst</h3>
+        </div>
+
+        <div class="grid grid-flow-col gap-4 md:gap-5 lg:gap-8 text-white">
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">About Us</a>
+            <a class="link link-hover">Shop</a>
+            <a class="link link-hover">All Fruits</a>
+            <a class="link link-hover">Support</a>
+            <a class="link link-hover">My Account</a>
+        </div>
+        <div>
+            <div class="grid grid-flow-col">
+                <div class="space-x-10">
+                    <span class="fa-brands fa-twitter text-white fa-2x"></span>
+                    <span class="fa-brands fa-facebook text-white fa-2x"></span>
+                    <span class="fa-brands fa-youtube text-white fa-2x"></span>
+                    <span class="fa-brands fa-linkedin-in text-white fa-2x"></span>
+                    <span class="fa-brands fa-instagram text-white fa-2x"></span>
+                    <span class="fa-brands fa-apple text-white fa-2x"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--------------------- footer section end ---------------------->
+
+</body>
+
+</html>
