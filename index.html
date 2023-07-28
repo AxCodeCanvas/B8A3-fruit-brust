@@ -23,26 +23,99 @@
         .font-lato {
             font-family: 'Lato', sans-serif;
         }
+
     </style>
 </head>
-
-
-
-
-
-
 
 <body class="font-lato">
     <header class="container mx-auto px-8 md:px-12 lg:px-20">
         <!------------ nav section start --------------->
+        <nav class=" mt-14">
 
-        <div class=" my-20 relative ">
+            <div class="bg-[#F85559] rounded-full">
+                <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+                    <div class="relative flex grid items-center grid-cols-2 lg:grid-cols-3">
+                        <ul class="flex items-center hidden space-x-8 lg:flex">
+                            <li><a href="/" aria-label="Our product" title="Our product"
+                                    class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Home</a>
+                            </li>
+                            <li><a href="/" aria-label="Our product" title="Our product"
+                                    class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">About
+                                    Us</a></li>
+                            <li><a href="/" aria-label="Product pricing" title="Product pricing"
+                                    class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Shop</a>
+                            </li>
+                            <li><a href="/" aria-label="Product pricing" title="Product pricing"
+                                    class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">All
+                                    Fruits</a></li>
+                        </ul>
+                        <a href="/" aria-label="Company" title="Company" class="inline-flex items-center lg:mx-auto">
+                            <img class="w-10 h-10 lg:w-14 lg:h-14" src="./images/logo.png" alt="logo">
+                            <span
+                                class="ml-2 text-xl md:text-3xl lg:text-4xl font-bold tracking-wide text-gray-100 ">Fruit
+                                Burst</span>
+                        </a>
+
+                        <ul class="flex items-center hidden ml-auto space-x-8 lg:flex">
+
+                            <div
+                                class="flex flex-row items-center justify-between w-full p-2 bg-white shadow-xs    rounded-full">
+
+                                <div class="flex justify-between items-center ml-10 md:flex">
+
+                                    <a href="#" class="">
+                                        <input class="outline-0" type="text" placeholder="Search here">
+                                    </a>
+                                    <span class="fa-solid fa-magnifying-glass mx-3 cursor-pointer"></span>
+                                </div>
+                            </div>
+
+                        </ul>
+
+                        <!-- Mobile menu -->
+                        <div class="ml-auto lg:hidden">
+                            <button aria-label="Open Menu" title="Open Menu"
+                                class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline">
+                                <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z">
+                                    </path>
+                                    <path fill="currentColor"
+                                        d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"></path>
+                                    <path fill="currentColor"
+                                        d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z">
+                                    </path>
+                                </svg>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </nav>
+        <!------------ nav section end --------------->
+
+
+        <!-- ---------- Carousel start------- -->
+        <div class=" my-14 relative ">
 
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
 
                     <!-- banner image 1 -->
-                    <img src="./images/banner1.png" class="w-full card" />
+                    <div class="absolute rounded-lg w-full bg-gradient-to-r from-gray-600 to-gray-700 ">
+                        <img src="./images/banner1.png" class="opacity-30 w-full card" />
+                    </div>
 
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide4" class="btn btn-circle">❮</a>
@@ -51,8 +124,10 @@
                 </div>
                 <div id="slide2" class="carousel-item relative w-full">
 
-                    <!-- banner image 3 -->
-                    <img src="./images/banner2.png" class="w-full" />
+                    <!-- banner image 2 -->
+                    <div class="absolute w-full rounded-lg bg-gradient-to-r from-gray-600 to-gray-700">
+                        <img src="./images/banner2.png" class="opacity-30 w-full" />
+                    </div>
 
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide1" class="btn btn-circle">❮</a>
@@ -62,7 +137,10 @@
                 <div id="slide3" class="carousel-item relative w-full">
 
                     <!-- banner image 3 -->
-                    <img src="./images/banner3.png" class="w-full" />
+                    <div class="absolute w-full rounded-lg bg-gradient-to-r from-gray-600 to-gray-700">
+                        <img src="./images/banner3.png" class="opacity-30 w-full" />
+                    </div>
+
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide2" class="btn btn-circle">❮</a>
                         <a href="#slide4" class="btn btn-circle">❯</a>
@@ -71,7 +149,9 @@
                 <div id="slide4" class="carousel-item relative w-full">
 
                     <!-- banner image 4 -->
-                    <img src="./images/banner4.png" class="w-full" />
+                    <div class=" w-full bg-gradient-to-r from-gray-600 to-gray-700">
+                        <img src="./images/banner4.png" class="opacity-30 w-full" />
+                    </div>
 
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide3" class="btn btn-circle">❮</a>
@@ -97,10 +177,13 @@
             </button>
 
         </div>
+        <!-- ---------- Carousel start------- -->
 
-        <!-- -------------------------------------- -->
+
+        <!-- ------- small card container--------- -->
         <div class="relative flex justify-center invisible md:invisible lg:visible  ">
-            <div class=" absolute flex bottom-5 md:bottom-5 lg:bottom-10 gap-5 md:gap-1 lg:gap-12 pl-3 md:pl-0 lg:pl-10  pr-5 md:pr-0 lg:pr-10 w-fit  rounded bg-white">
+            <div
+                class=" absolute flex bottom-5 md:bottom-5 lg:bottom-10 gap-5 md:gap-1 lg:gap-12 pl-3 md:pl-0 lg:pl-10  pr-5 md:pr-0 lg:pr-10 w-fit  rounded bg-white">
 
                 <!-- 1 -->
                 <div class=" flex flex-col items-center">
@@ -156,10 +239,10 @@
     </header>
 
     <!--------------------- main section start ---------------------->
-    <main class="container mx-auto px-5 md:px-12 lg:px-20">
+    <main class="container mx-auto px-4 md:px-12 lg:px-20">
 
         <!-- Deal of the day section -->
-        <section class="mt-10">
+        <section class="mt-24">
             <!-- Deal of the day text -->
             <div class="flex flex-col md:flex-col lg:flex-row items-center justify-between">
                 <div class="text-center lg:items-start ">
@@ -232,7 +315,7 @@
                             <div class="">
 
                                 <span class="fa fa-star text-[#F85559]"></span>
-                                <span class="fa fa-star text-[#F85559]"></span>
+                                <span class="fa fa-star text-[#F85559] "></span>
                                 <span class="fa fa-star text-[#FBC0A8]"></span>
                                 <span class="fa fa-star text-[#FBC0A8]"></span>
                                 <span class="fa fa-star text-[#FBC0A8]"></span>
@@ -572,8 +655,7 @@
             </div>
         </section>
     </main>
-    <!--------------------- main section start ---------------------->
-
+    <!--------------------- main section end ---------------------->
 
     <!--------------------- footer section start ---------------------->
     <footer class="footer footer-center mt-36 py-36 bg-[#121212] text-base-content">
@@ -605,6 +687,8 @@
         </div>
     </footer>
     <!--------------------- footer section end ---------------------->
+
+
 
 </body>
 
